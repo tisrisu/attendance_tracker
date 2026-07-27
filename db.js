@@ -1,11 +1,15 @@
 const fs = require('fs');
 const path = require('path');
-const { kv } = require('@vercel/kv');
+const { createClient } = require('@vercel/kv');
 
 const DB_FILE = path.join(__dirname, 'attendance_data.json');
 
-// Check if we are using Vercel KV or local fallback
-const useKV = process.env.KV_REST_API_URL && process.env.KV_REST_API_TOKEN;
+// Upstash Redis from Marketplace uses different env vars than Vercel KV
+const url = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL;
+const token = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN;
+
+const useKV = !!(url && token);
+const kv = useKV ? createClient({ url, token }) : null;
 
 // ─── Local Fallback Helpers ──────────────────────────
 function loadLocal() {
