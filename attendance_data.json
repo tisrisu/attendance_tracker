@@ -1,0 +1,49 @@
+{
+  "students": {
+    "2201EE45": {
+      "roll_no": "2201EE45",
+      "name": "Aman",
+      "created_at": "2026-07-26 21:16:29"
+    },
+    "2201EE44": {
+      "roll_no": "2201EE44",
+      "name": "",
+      "created_at": "2026-07-27 06:10:53"
+    }
+  },
+  "attendance": [
+    {
+      "id": 1,
+      "roll_no": "2201EE45",
+      "course_code": "EE2102",
+      "date": "2026-07-27",
+      "status": "present",
+      "marked_at": "2026-07-26 21:17:31"
+    },
+    {
+      "id": 2,
+      "roll_no": "2201EE45",
+      "course_code": "EE2101",
+      "date": "2026-07-27",
+      "status": "absent",
+      "marked_at": "2026-07-26 21:17:42"
+    },
+    {
+      "id": 3,
+      "roll_no": "2201EE45",
+      "course_code": "EE2102",
+      "date": "2026-07-26",
+      "status": "present",
+      "marked_at": "2026-07-26 21:19:52"
+    },
+    {
+      "id": 4,
+      "roll_no": "2201EE45",
+      "course_code": "EE2101",
+      "date": "2026-07-26",
+      "status": "absent",
+      "marked_at": "2026-07-26 21:20:04"
+    }
+  ],
+  "_nextId": 14
+}

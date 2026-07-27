@@ -1,0 +1,15 @@
+{
+  "name": "attendance-tracker",
+  "version": "1.0.0",
+  "description": "Attendance Tracker for IIT Patna 2nd Year EE/EC Courses",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "@vercel/kv": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.21.0"
+  }
+}
