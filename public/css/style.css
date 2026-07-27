@@ -1131,3 +1131,20 @@ body {
   .ring-wrap { width: 72px; height: 72px; }
   .ring-pct { font-size: 1.1rem; }
 }
+
+/* ─── Site Footer ──────────────────────────────────── */
+.site-footer {
+  text-align: center;
+  padding: 24px 16px;
+  margin-top: 32px;
+  border-top: 1px solid var(--border);
+  position: relative;
+  z-index: 1;
+}
+
+.site-footer p {
+  font-size: 0.9rem;
+  color: var(--accent);
+  letter-spacing: 0.5px;
+  font-weight: 600;
+}
