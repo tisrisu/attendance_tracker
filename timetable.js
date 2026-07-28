@@ -59,6 +59,7 @@ const schedule = {
     { code: 'EE2101', time: '10:00 AM – 10:55 AM', startHour: 10, startMin: 0, endHour: 10, endMin: 55, room: 'LT-102' },
     { code: 'EC2101', time: '11:00 AM – 11:55 AM', startHour: 11, startMin: 0, endHour: 11, endMin: 55, room: 'LT-102' },
     { code: 'EE2103', time: '12:00 PM – 12:55 PM', startHour: 12, startMin: 0, endHour: 12, endMin: 55, room: 'LT-102' },
+    { code: 'EC2102', time: '3:00 PM – 3:55 PM', startHour: 15, startMin: 0, endHour: 15, endMin: 55, room: 'LT-102' },
   ],
   Wednesday: [
     { code: 'EC2102', time: '3:00 PM – 3:55 PM', startHour: 15, startMin: 0, endHour: 15, endMin: 55, room: 'LT-102', label: 'Tutorial' },
